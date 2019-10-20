@@ -175,6 +175,7 @@ nav ul li:last-child {
   text-align: left;
   padding: calc(var(--font_n)/2) 0;
   width: 30%;
+  font-weight: bold;
 }
 .contact_td2 {
   text-align: left;
@@ -267,11 +268,13 @@ nav ul li:last-child {
   text-align: left;
   padding: calc(var(--font_n)/2) 0;
   width: 30%;
+  font-weight: bold;
 }
 .opening_hours_td2 {
   text-align: left;
   padding: calc(var(--font_n)/2) 0;
   width: 50%;
+  font-weight: bold;
 }
 
 
