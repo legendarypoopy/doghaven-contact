@@ -267,7 +267,7 @@ nav ul li:last-child {
 .opening_hours_td1 {
   text-align: left;
   padding: calc(var(--font_n)/2) 0;
-  width: 30%;
+  width: 15%;
   font-weight: bold;
 }
 .opening_hours_td2 {
