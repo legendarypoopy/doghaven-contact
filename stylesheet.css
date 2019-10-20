@@ -147,9 +147,8 @@ nav ul li:last-child {
 }
 
 
-/* MOBILE SECTION: grid_container */
-.grid_container {
-  background: var(--clr_shade);
+/* MOBILE SECTION: CONTACT US (grid_container1) */
+.grid_container1 {
   display: grid;
   /* Can change 1 to auto-fit and it will be responsive
   18rem is the biggest it can go before the screen can't fit for small mobile devices */
@@ -162,64 +161,136 @@ nav ul li:last-child {
 
 /* MOBILE SECTION: contact container */
 .contact {
-  /* background: lightpink; */
   padding: 12% 0 0% 0;
 }
 .contact h1 {
   padding: 0% 0 4% 0;
-  /* background: yellow; */
 }
 
 .contact_table {
   border-collapse: collapse;
-  /* width+bothmargin = 88+6+6 = 100% */
-  /* width: 88%; */
-  /* can't add margin to the bottom */
-  /* margin: 0% 6%; */
-  /* background-color: pink; */
+  width: 100%;
 }
-.contact_table th, 
-.contact_table td {
+.contact_td1 {
   text-align: left;
   padding: calc(var(--font_n)/2) 0;
   width: 30%;
-  /* background: lightgoldenrodyellow; */
 }
-.contact_table tr:nth-child(odd) {
-  /* background-color: rgba(255,255,255,0.5); */
+.contact_td2 {
+  text-align: left;
+  padding: calc(var(--font_n)/2) 0;
+  width: 50%;
 }
 
 
+/* MOBILE SECTION: TEL, EMAIL, ADDRESS HYPERLINK */
+.contact_dh {
+  color: var(--clr_primary);
+  font-weight: bold;
+}
+.contact_dh:link {
+  color: var(--clr_primary);
+  text-decoration: none;
+}
+.contact_dh:visited {
+  color: var(--clr_primary);
+  text-decoration: none;
+}
+.contact_dh:hover {
+  color: var(--clr_dark);
+  text-decoration: none;
+}
+.contact_dh:active {
+  /* color: var(--clr_dark); */
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.email_dh {
+  color: var(--clr_primary);
+  font-weight: bold;
+}
+.email_dh:link {
+  color: var(--clr_primary);
+  text-decoration: none;
+}
+.email_dh:visited {
+  color: var(--clr_primary);
+  text-decoration: none;
+}
+.email_dh:hover {
+  color: var(--clr_dark);
+  text-decoration: none;
+}
+.email_dh:active {
+  /* color: var(--clr_dark); */
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.map_dh {
+  color: var(--clr_primary);
+  font-weight: bold;
+}
+.map_dh:link {
+  color: var(--clr_primary);
+  text-decoration: none;
+}
+.map_dh:visited {
+  color: var(--clr_primary);
+  text-decoration: none;
+}
+.map_dh:hover {
+  color: var(--clr_dark);
+  text-decoration: none;
+}
+.map_dh:active {
+  /* color: var(--clr_dark); */
+  font-weight: normal;
+  text-decoration: none;
+}
 
 
 /* MOBILE SECTION: opening_hours container */
 .opening_hours {
-  /* background: lightpink; */
   padding: 12% 0 12% 0;
 }
 .opening_hours h1 {
   padding: 0% 0 4% 0;
-  /* background: pink; */
 }
 
 .opening_hours_table {
   border-collapse: collapse;
-  /* width+bothmargin = 88+6+6 = 100% */
-  /* width: 88%; */
-  /* can't add margin to the bottom */
-  /* margin: 0% 6%; */
-  /* background-color: pink; */
+  width: 100%;
 }
-.opening_hours_table th, 
-.opening_hours_table td {
+.opening_hours_td1 {
   text-align: left;
   padding: calc(var(--font_n)/2) 0;
-  width: 43%;
-  /* background: lightgoldenrodyellow; */
+  width: 30%;
 }
-.opening_hours_table tr:nth-child(odd) {
-  /* background-color: rgba(255,255,255,0.5); */
+.opening_hours_td2 {
+  text-align: left;
+  padding: calc(var(--font_n)/2) 0;
+  width: 50%;
 }
+
+
+
+/* MOBILE SECTION: FORM (grid_container2) */
+.grid_container2 {
+  background: var(--clr_shade);
+  display: grid;
+  /* Can change 1 to auto-fit and it will be responsive
+  18rem is the biggest it can go before the screen can't fit for small mobile devices */
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
+  grid-gap: var(--font_s);
+  padding: 10% 6%;
+  /* cursor: pointer; */
+}
+
+
+
+
 
 
 
