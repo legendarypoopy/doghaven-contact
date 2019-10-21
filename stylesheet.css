@@ -287,13 +287,92 @@ nav ul li:last-child {
   18rem is the biggest it can go before the screen can't fit for small mobile devices */
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
   grid-gap: var(--font_s);
-  padding: 10% 6%;
+  padding: 12% 6%;
   /* cursor: pointer; */
+}
+.form_header h1 {
+  /* padding: 0% 0 0% 0; */
+}
+.form_text p {
+  /* padding: 0% 0 0% 0; */
 }
 
 
 
+/* MOBILE SECTION: CAREER (grid_container3) */
+.grid_container3 {
+  background: var(--clr_dark);
+  color: var(--clr_light);
+  display: grid;
+  /* Can change 1 to auto-fit and it will be responsive
+  18rem is the biggest it can go before the screen can't fit for small mobile devices */
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
+  grid-gap: var(--font_s);
+  padding: 12% 6%;
+  /* cursor: pointer; */
+}
 
+/* MOBILE SECTION: CAREER HEADER box */
+.career_header h1 {
+  /* padding: 0% 0 0% 0; */
+}
+.career_header p {
+  padding: 3% 0 0% 0;
+}
+.email_career {
+  color: var(--clr_primary);
+  font-weight: bold;
+}
+.email_career:link {
+  color: var(--clr_primary);
+  text-decoration: none;
+}
+.email_career:visited {
+  color: var(--clr_primary);
+  text-decoration: none;
+}
+.email_career:hover {
+  color: var(--clr_light);
+  text-decoration: none;
+}
+.email_career:active {
+  /* color: var(--clr_dark); */
+  font-weight: normal;
+  text-decoration: none;
+}
+
+/* MOBILE SECTION: CAREER POSITION box */
+.career_position {
+  padding: 6% 0 0% 0;
+}
+
+/* Only below [.position] controls all 3 positions box layout */
+.position {
+  width: ;
+  height: 120px;
+  padding: 3%;
+  position: relative;
+}
+.position p {
+  position: absolute;
+  bottom: 0;
+  padding: 3% 0;
+}
+
+.position:nth-child(1) {
+  background: var(--clr_shade);
+  color: var(--clr_accent);
+  margin: 0 0 3% 0;
+}
+.position:nth-child(2) {
+  background: var(--clr_light);
+  color: var(--clr_accent);
+  margin: 0 0 3% 0;
+}
+.position:nth-child(3) {
+  /* background: pink; */
+  border: var(--clr_light) 1px solid;
+}
 
 
 
