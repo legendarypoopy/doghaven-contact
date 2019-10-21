@@ -359,7 +359,6 @@ nav ul li:last-child {
 
 /* Only below [.position] controls all 3 positions box layout */
 .position {
-  width: ;
   height: 120px;
   padding: 3%;
   position: relative;
