@@ -278,7 +278,6 @@ nav ul li:last-child {
 }
 
 
-
 /* MOBILE SECTION: FORM (grid_container2) */
 .grid_container2 {
   background: var(--clr_shade);
@@ -300,16 +299,15 @@ nav ul li:last-child {
   /* padding: 0% 0 0% 0; */
 }
 
+
 /* MOBILE SECTION: GOOGLE MAP */
 iframe {
-  /* Reason for choosing width=455px is because oneplus 7 phone has the biggest viewport width of all smartphone now */
-  width: 455px;
+  width: 100%;
   height: 300px;
   /* To solve the small white space under the map, choose 1 of the 2 solutions (display:block; or vertical-align:bottom;) below: */
   display: block;  
   /* vertical-align:bottom; */
 }
-
 
 
 /* MOBILE SECTION: CAREER (grid_container3) */
@@ -366,7 +364,6 @@ iframe {
   grid-gap: var(--font_s);
 }
 
-
 /* Only below [.position] controls all 3 positions box layout */
 .position {
   height: 120px;
@@ -391,7 +388,6 @@ iframe {
   /* background: pink; */
   border: var(--clr_light) 1px solid;
 }
-
 
 
 
@@ -604,16 +600,43 @@ footer .copyright p {
 
   /* TABLET SECTION: INTRO */
   .intro h1 {
-    /* color: var(--clr_light); */
     padding: 14% 6% 3% 6%;
   }
   .intro p {
     padding: 0% 6% 7% 6%;
-    /* color: var(--clr_light); */
   }
 
 
+  /* TABLET  SECTION: CONTACT US (grid_container1) */
+  .grid_container1 {
+    padding: 8% 6%;
+  }
+
+  /* TABLET SECTION: contact container */
+  .contact_td1 {
+    width: 20%;
+  }
+  .contact_td2 {
+    width: 50%;
+  }  
   
+
+  /* TABLET SECTION: FORM (grid_container2) */
+  .grid_container2 {
+    padding: 8% 6%;
+  }
+
+
+  /* TABLET SECTION: CAREER (grid_container3) */
+  .grid_container3 {
+    padding: 8% 6%;
+  }
+
+  /* TABLET SECTION: CAREER HEADER box */
+.career_header {
+  padding: 0 16% 6% 0;
+}
+
 
   /* TABLET SECTION: FOOTER */
   footer .info p {
@@ -639,17 +662,41 @@ footer .copyright p {
   
   /* DESKTOP SECTION: INTRO */
   .intro h1 {
-    /* width: 100%; */
-    /* color: var(--clr_light); */
-    padding: 10% 6% 1% 6%;
+    padding: 8% 6% 1% 6%;
     text-align: center;
   }
   .intro p {
-    padding: 0% 6% 7% 6%;
+    padding: 0% 6% 6% 6%;
     text-align: center;
   }
 
 
+  /* DESKTOP  SECTION: CONTACT US (grid_container1) */
+  .grid_container1 {
+    padding: 6% 6%;
+  }
+
+  /* DESKTOP SECTION: contact container */
+  .contact_td1 {
+    width: 15%;
+  }
+
+/* DESKTOP SECTION: opening_hours container */
+  .opening_hours_td1 {
+    width: 14%;
+  }
+
+
+  /*DESKTOP SECTION: FORM (grid_container2) */
+  .grid_container2 {
+    padding: 6% 6%;
+  }
+
+
+  /* DESKTOP SECTION: CAREER (grid_container3) */
+  .grid_container3 {
+    padding: 6% 6%;
+  }
 
 
   /* DESKTOP SECTION: FOOTER */  
