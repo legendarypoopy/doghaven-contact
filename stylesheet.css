@@ -288,11 +288,14 @@ nav ul li:last-child {
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
   grid-gap: var(--font_s);
   padding: 12% 6%;
-  /* cursor: pointer; */
 }
+
+/* MOBILE SECTION: FORM HEADER box */
 .form_header h1 {
   /* padding: 0% 0 0% 0; */
 }
+
+/* MOBILE SECTION: FORM TEXT box */
 .form_text p {
   /* padding: 0% 0 0% 0; */
 }
@@ -313,6 +316,9 @@ nav ul li:last-child {
 }
 
 /* MOBILE SECTION: CAREER HEADER box */
+.career_header {
+  padding: 0 0 6% 0;
+}
 .career_header h1 {
   /* padding: 0% 0 0% 0; */
 }
@@ -342,9 +348,14 @@ nav ul li:last-child {
 }
 
 /* MOBILE SECTION: CAREER POSITION box */
-.career_position {
-  padding: 6% 0 0% 0;
+.subgrid_career_position {
+  display: grid;
+  /* Can change 1 to auto-fit and it will be responsive
+  18rem is the biggest it can go before the screen can't fit for small mobile devices */
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); 
+  grid-gap: var(--font_s);
 }
+
 
 /* Only below [.position] controls all 3 positions box layout */
 .position {
@@ -362,12 +373,10 @@ nav ul li:last-child {
 .position:nth-child(1) {
   background: var(--clr_shade);
   color: var(--clr_accent);
-  margin: 0 0 3% 0;
 }
 .position:nth-child(2) {
   background: var(--clr_light);
   color: var(--clr_accent);
-  margin: 0 0 3% 0;
 }
 .position:nth-child(3) {
   /* background: pink; */
