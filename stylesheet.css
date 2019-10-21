@@ -300,31 +300,15 @@ nav ul li:last-child {
   /* padding: 0% 0 0% 0; */
 }
 
-/* width="400" height="300" */
+/* MOBILE SECTION: GOOGLE MAP */
 iframe {
+  /* Reason for choosing width=455px is because oneplus 7 phone has the biggest viewport width of all smartphone now */
   width: 455px;
   height: 300px;
-  /* frameborder=0;  */
-  /* border:0;  */
-  /* allowfullscreen=""; */
-  /* margin: 0; */
-  
-  /* background: pink; */
+  /* To solve the small white space under the map, choose 1 of the 2 solutions (display:block; or vertical-align:bottom;) below: */
+  display: block;  
+  /* vertical-align:bottom; */
 }
-
-/* .mapouter {
-  position: relative;
-  text-align: right;
-  height: 300px;
-  width: 455px;
-}
-.gmap_canvas {
-  overflow: hidden;
-  background: none!important;
-  height: 300px;
-  width: 455px;
-} */
-
 
 
 
