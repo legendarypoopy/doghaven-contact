@@ -328,10 +328,10 @@ iframe {
   padding: 0 0 6% 0;
 }
 .career_header h1 {
-  /* padding: 0% 0 0% 0; */
+  padding: 0% 0 3% 0;
 }
 .career_header p {
-  padding: 3% 0 0% 0;
+  padding: 0% 0% 1% 0;
 }
 .email_career {
   color: var(--clr_primary);
@@ -355,6 +355,8 @@ iframe {
   text-decoration: none;
 }
 
+
+
 /* MOBILE SECTION: CAREER POSITION box */
 .subgrid_career_position {
   display: grid;
@@ -362,31 +364,54 @@ iframe {
   18rem is the biggest it can go before the screen can't fit for small mobile devices */
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); 
   grid-gap: var(--font_s);
+  padding: 3% 0 0 0;
 }
 
+.resume_link:link {
+  color: var(--clr_primary);
+  text-decoration: none;
+}
+.resume_link:visited {
+  color: var(--clr_primary);
+  text-decoration: none;
+}
+.resume_link:hover {
+  /* background-color: red; */
+  /* z-index: -991; */
+  color: var(--clr_light);
+  text-decoration: none;
+  /* -webkit-filter: drop-shadow(8px 8px 10px green);filter: drop-shadow(8px 8px 10px green); */
+  /* -webkit-filter: opacity(50%);filter: opacity(50%); */
+}
+.resume_link:active {
+  color: var(--clr_accent);
+  text-decoration: none;
+}
+
+/* MOBILE SECTION: ALL POSITION box */
 /* Only below [.position] controls all 3 positions box layout */
 .position {
-  height: 120px;
+  height: 100px;
+  border: var(--clr_light) 1px solid;
   padding: 3%;
-  position: relative;
+  line-height: 100px;
+  transition: transform 1s;
 }
-.position p {
-  position: absolute;
-  bottom: 0;
-  padding: 3% 0;
+.position:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  transform: scale(1.02);
 }
 
-.position:nth-child(1) {
-  background: var(--clr_shade);
-  color: var(--clr_accent);
+.position h2 {
+  text-align: center;
 }
-.position:nth-child(2) {
-  background: var(--clr_light);
-  color: var(--clr_accent);
-}
-.position:nth-child(3) {
-  /* background: pink; */
-  border: var(--clr_light) 1px solid;
+
+/* This span will vertically align the text in the div */
+.position span {
+  display: inline-block;
+  vertical-align: middle;
+  /* adjust below + "height and line height" must be same */
+  line-height: var(--font_m); 
 }
 
 
@@ -629,13 +654,14 @@ footer .copyright p {
 
   /* TABLET SECTION: CAREER (grid_container3) */
   .grid_container3 {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr)); 
     padding: 8% 6%;
   }
 
   /* TABLET SECTION: CAREER HEADER box */
-.career_header {
-  padding: 0 16% 6% 0;
-}
+  .career_header {
+    padding: 0 16% 6% 0;
+  }
 
 
   /* TABLET SECTION: FOOTER */
@@ -695,9 +721,25 @@ footer .copyright p {
 
   /* DESKTOP SECTION: CAREER (grid_container3) */
   .grid_container3 {
+    /* grid-template-columns: repeat(auto-fit, minmax(45rem, 2fr));  */
     padding: 6% 6%;
   }
 
+  /* DESKTOP SECTION: CAREER HEADER box */
+  .career_header p {
+    padding: 0% 8% 1% 0;
+  }
+
+  /* DESKTOP SECTION: CAREER POSITION box */
+  .subgrid_career_position {
+    /* Can change 1 to auto-fit and it will be responsive
+    18rem is the biggest it can go before the screen can't fit for small mobile devices */
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr)); 
+  }
+  .subgrid_career_position h1 {
+    position: block;
+    background: pink;
+  }
 
   /* DESKTOP SECTION: FOOTER */  
   footer .info h1  {
