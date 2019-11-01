@@ -154,7 +154,7 @@ nav ul li:last-child {
   18rem is the biggest it can go before the screen can't fit for small mobile devices */
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
   grid-gap: var(--font_s);
-  padding: 12% 6%;
+  padding: 11% 6%;
   /* cursor: pointer; */
 }
 
@@ -286,18 +286,112 @@ nav ul li:last-child {
   18rem is the biggest it can go before the screen can't fit for small mobile devices */
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
   grid-gap: var(--font_s);
-  padding: 12% 6%;
+  padding: 11% 6% 5% 6%;
 }
 
 /* MOBILE SECTION: FORM HEADER box */
-.form_header h1 {
+.form_title {
   /* padding: 0% 0 0% 0; */
 }
 
-/* MOBILE SECTION: FORM TEXT box */
-.form_text p {
+/* MOBILE SECTION: FORM paragraph */
+.form_para {
   /* padding: 0% 0 0% 0; */
 }
+
+
+/* MOBILE SECTION: ACTUAL FORM  */
+.form {
+  padding: 0 6%;
+  background: var(--clr_shade);
+}
+
+.show_label_flexbox {
+  height: 25px;
+  display: flex;
+  /* this will push the text to the bottom of the div */
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 0 0.5% 0;
+   /* background: pink;  */
+}
+.show_label_flexbox p {
+  font-size: calc(var(--font_n) * 0.95);
+}
+.show_label_text {
+  color: gray;
+  display: none;
+}
+.required {
+  color: var(--clr_primary);
+  display: none;
+}
+
+.form-item {
+  margin: 0 0 4% 0;
+}
+.form-input {
+  background: var(--clr_shade);
+  font-size: var(--font_n);
+  line-height: calc(var(--font_n) * 1.9);
+  letter-spacing: 1px;
+  padding: 3%;
+  width: 93%;
+  border: 2px solid #d3d3d3;
+}
+.last-form-input {
+  height: 130px;
+}
+
+.form-button {
+  cursor: pointer;
+  font-size: var(--font_n);
+  padding: 10px 40px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid var(--clr_accent);
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr_accent);
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  transition: .3s;
+
+/* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
+  margin: 7% 0% 15% 0%;
+}
+.form-button:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_primary);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.form-button:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: var(--clr_primary);
+  top: -100%;
+  left: 0;
+  z-index: -1;
+  transition: .3s;
+}
+.form-button:hover {
+  color: var(--clr_dark);
+  border: 1px solid var(--clr_primary);
+  z-index: 1;
+}
+.form-button:hover:before {
+  top: 0;
+}
+
 
 
 /* MOBILE SECTION: GOOGLE MAP */
@@ -391,10 +485,10 @@ iframe {
 /* MOBILE SECTION: ALL POSITION box */
 /* Only below [.position] controls all 3 positions box layout */
 .position {
-  height: 100px;
+  height: 90px;
   border: var(--clr_light) 1px solid;
   padding: 3%;
-  line-height: 100px;
+  line-height: 90px;
   transition: transform 1s;
 }
 .position:hover {
