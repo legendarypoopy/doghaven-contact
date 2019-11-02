@@ -337,7 +337,7 @@ nav ul li:last-child {
   letter-spacing: 1px;
   padding: 3%;
   width: 93%;
-  border: 1px solid #d3d3d3;
+  border: 1.5px solid #d3d3d3;
 }
 .last-form-input {
   height: 130px;
