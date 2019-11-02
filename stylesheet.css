@@ -333,11 +333,11 @@ nav ul li:last-child {
 .form-input {
   background: var(--clr_shade);
   font-size: var(--font_n);
-  line-height: calc(var(--font_n) * 1.9);
+  line-height: calc(var(--font_n) * 1.7);
   letter-spacing: 1px;
   padding: 3%;
   width: 93%;
-  border: 2px solid #d3d3d3;
+  border: 1px solid #d3d3d3;
 }
 .last-form-input {
   height: 130px;
