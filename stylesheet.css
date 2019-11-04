@@ -337,13 +337,15 @@ nav ul li:last-child {
   letter-spacing: 1px;
   padding: 3%;
   width: 93%;
-  border: 1.5px solid #d3d3d3;
+  border: 1px solid #d3d3d3;
+  font-family: inherit;
 }
-.last-form-input {
-  height: 130px;
+  textarea {
+  height: 8rem;
 }
 
 .form-button {
+  letter-spacing: 1px;
   cursor: pointer;
   font-size: var(--font_n);
   padding: 10px 40px;
@@ -359,7 +361,7 @@ nav ul li:last-child {
   transition: .3s;
 
 /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
-  margin: 7% 0% 15% 0%;
+  margin: 7% 0% 15% 0.5%;
 }
 .form-button:before {
   content: '';
