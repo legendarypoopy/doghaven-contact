@@ -148,10 +148,10 @@ nav ul li:last-child {
 }
 .intro h1 {
   color: var(--clr_light);
-  padding: 7% 6% 3% 6%;
+  padding: 5% 6% 3% 6%;
 }
 .intro p {
-  padding: 0% 6% 10% 6%;
+  padding: 0% 6% 9% 6%;
   color: var(--clr_light);
 }
 
