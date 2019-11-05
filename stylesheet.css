@@ -10,6 +10,8 @@
   --clr_dark: black;
   --clr_light: white;
   --clr_shade: #F3F3F3;
+  --clr_logogreen: #8DC73F;
+
 
   --ff_title: 'Raleway', sans-serif;
   --ff_serif: 'Open Sans', sans-serif;
@@ -95,20 +97,13 @@ nav ul li {
   }
 nav ul li a {
   color: var(--clr_accent);
-  text-shadow:
-		/* -1px -1px 0 rgba(255,255,255,0.5), */
-		1px -1px 0 rgba(255,255,255,0.5);
-		/* -1px 1px 0 rgba(255,255,255,0.5), */
-		/* 1px 1px 0 rgba(255,255,255,0.5); */
-  /* text-shadow: 0px 0px 30px white,0px 0px 30px white,0px 0px 30px white,0px 0px 10px white,0px 0px 10px white; */
   display: block;
   white-space: nowrap;
   padding: 3% 6%;
   text-decoration: none;
-  /* font-weight: 900; */
 }
 nav ul li a:hover {
-  color: var(--clr_primary);
+  color: black;
   background: rgba(255, 255, 255, 0.8);
 }
 /* This is to give extra white space at the top when toggle menu */
@@ -119,6 +114,19 @@ nav ul li:first-child {
 nav ul li:last-child {
   padding: 0 0 100% 0;
 }
+.currentnav {
+  cursor: default;
+  border-left: 2px solid var(--clr_accent);
+}
+.currentnav:hover {
+  color: var(--clr_accent);
+  background: var(--clr_shade);
+}
+nav ul li a:hover {
+  /* color: var(--clr_primary); */
+  background: var(--clr_shade);
+}
+
 .menu_toggle {
   position: absolute;
   /* display: none; */
@@ -135,8 +143,7 @@ nav ul li:last-child {
 /* MOBILE SECTION: INTRO */
 .intro {
   /* width: 100%; */
-  background: #8DC73F;
-  position: relative;
+  background: var(--clr_logogreen);
 }
 .logo_green {
   height: 50px;
@@ -727,6 +734,14 @@ footer .copyright p {
   }
   nav ul li:last-child {
     padding: 0;
+
+  }
+  .currentnav {
+    border-left: none;
+    text-decoration: overline;
+  }
+  .currentnav:hover {
+    background: transparent;
   }
   .menu_toggle {
     display: none;
