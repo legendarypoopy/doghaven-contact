@@ -104,7 +104,8 @@ nav ul li a {
 }
 nav ul li a:hover {
   color: black;
-  background: rgba(255, 255, 255, 0.8);
+  /* background: rgba(255, 255, 255, 0.8); */
+  background: var(--clr_shade);
 }
 /* This is to give extra white space at the top when toggle menu */
 nav ul li:first-child {
@@ -119,11 +120,7 @@ nav ul li:last-child {
   border-left: 2px solid var(--clr_accent);
 }
 .currentnav:hover {
-  color: var(--clr_accent);
-  background: var(--clr_shade);
-}
-nav ul li a:hover {
-  background: var(--clr_shade);
+  color: inherit;
 }
 .menu_toggle {
   position: absolute;
@@ -140,7 +137,6 @@ nav ul li a:hover {
 
 /* MOBILE SECTION: INTRO */
 .intro {
-  /* width: 100%; */
   background: var(--clr_logogreen);
 }
 .logo_green {
@@ -153,7 +149,7 @@ nav ul li a:hover {
 }
 .intro h1 {
   color: var(--clr_light);
-  padding: 5% 6% 2% 6%;
+  padding: 5.5% 6% 2% 6%;
 }
 .intro p {
   padding: 0% 6% 9% 6%;
@@ -732,7 +728,6 @@ footer .copyright p {
   }
   nav ul li:last-child {
     padding: 0;
-
   }
   .currentnav {
     border-left: none;
