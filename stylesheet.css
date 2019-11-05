@@ -340,8 +340,13 @@ nav ul li:last-child {
   border: 1px solid #d3d3d3;
   font-family: inherit;
 }
+.form-input:focus {
+  border: 1px solid #a8a8a8;
+}
   textarea {
   height: 8rem;
+  resize: vertical;
+  max-height: 15rem;
 }
 
 .form-button {
@@ -361,7 +366,7 @@ nav ul li:last-child {
   transition: .3s;
 
 /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
-  margin: 7% 0% 15% 0.5%;
+  margin: 6% 0% 15% 0.5%;
 }
 .form-button:before {
   content: '';
@@ -427,7 +432,7 @@ iframe {
   padding: 0% 0 3% 0;
 }
 .career_header p {
-  padding: 0% 0% 1% 0;
+  /* padding: 0% 0% 1% 0; */
 }
 .email_career {
   color: var(--clr_primary);
@@ -488,7 +493,7 @@ iframe {
 /* Only below [.position] controls all 3 positions box layout */
 .position {
   height: 90px;
-  border: var(--clr_light) 1px solid;
+  border: 1px solid var(--clr_light);
   padding: 3%;
   line-height: 90px;
   transition: transform 1s;

@@ -119,16 +119,15 @@
       </div>
     </div>
 
-    
 
-    <form action="#" class="form">
+    <form action="contactform.php" class="form" method="post">
 
       <div class="show_label_flexbox">
         <p class="show_label_text">Name</p>
         <p class="required"><strong>Required</strong></p>
       </div>
       <div class="form-item">
-        <input type="text" class="form-input" placeholder="Name*" aria-label="name">
+        <input type="text" name="name" class="form-input" placeholder="Name*" aria-label="name">
       </div>
 
       <div class="show_label_flexbox">
@@ -136,7 +135,7 @@
         <p class="required"><strong>Required</strong></p>
       </div>
       <div class="form-item">
-        <input type="email" class="form-input" placeholder="Email*" aria-label="email">
+        <input type="email" name="email" class="form-input" placeholder="Email*" aria-label="email">
       </div>
 
       <div class="show_label_flexbox">
@@ -144,7 +143,7 @@
         <!-- <p class="required"> <strong>Required</strong></p> -->
       </div>
       <div class="form-item">
-        <input type="text" class="form-input" placeholder="Subject" aria-label="subject">
+        <input type="text" name="subject" class="form-input" placeholder="Subject" aria-label="subject">
       </div>
 
       <div class="show_label_flexbox">
@@ -156,14 +155,9 @@
         <!-- <input type="text" class="form-input last-form-input" placeholder="Message*" aria-label="message"> -->
       </div>
 
-      <button class="form-button" type="submit">Submit</button>
+      <button class="form-button" type="submit" name="submit">Submit</button>
 
     </form>
-
-
-
-
-
 
 
 
@@ -182,6 +176,7 @@
       <div class="career_header">
         <h1>JOIN US</h1>
         <p>If you think you have passion & love for pets, with a positive attitude and an effective team player, we want you!</p>
+        <br>
         <p>Please send your resume to: <a href="mailto:joinus@doghaven.com.sg" class="email_career">joinus@doghaven.com.sg</a></p>
       </div>
       
