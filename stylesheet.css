@@ -134,15 +134,24 @@ nav ul li:last-child {
 
 /* MOBILE SECTION: INTRO */
 .intro {
-  width: 100%;
-  background: var(--clr_primary);
+  /* width: 100%; */
+  background: #8DC73F;
+  position: relative;
+}
+.logo_green {
+  height: 50px;
+  background-image: url("IMG/logo_green.JPG");
+  background-repeat: no-repeat;
+  background-size: 26%;
+  margin: 0% 0 0 6%;
+  background-position-y: 3px;
 }
 .intro h1 {
   color: var(--clr_light);
-  padding: 14% 6% 3% 6%;
+  padding: 7% 6% 3% 6%;
 }
 .intro p {
-  padding: 3% 6% 10% 6%;
+  padding: 0% 6% 10% 6%;
   color: var(--clr_light);
 }
 
