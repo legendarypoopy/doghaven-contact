@@ -123,40 +123,46 @@
 
     <form action="contactform.php" class="form" method="post">
 
-      <div class="show_label_flexbox">
-        <p class="show_label_text">Name</p>
-        <p class="required"><strong>Required</strong></p>
-      </div>
-      <div class="form-item">
-        <input type="text" name="name" class="form-input" placeholder="Name*" aria-label="name">
-      </div>
+      <div class="grid_container_form">
 
-      <div class="show_label_flexbox">
-        <p class="show_label_text">Email</p>
-        <p class="required"><strong>Required</strong></p>
-      </div>
-      <div class="form-item">
-        <input type="email" name="email" class="form-input" placeholder="Email*" aria-label="email">
-      </div>
+        <div class="show_label_flexbox gridarea_flex_name">
+          <p class="show_label_text">Name</p>
+          <p class="required"><strong>Required</strong></p>
+        </div>
+        <div class="form-item gridarea_name">
+          <input type="text" name="name" class="form-input" placeholder="Name*" aria-label="name">
+        </div>
 
-      <div class="show_label_flexbox">
-        <p class="show_label_text">Subject</p>
-        <!-- <p class="required"> <strong>Required</strong></p> -->
-      </div>
-      <div class="form-item">
-        <input type="text" name="subject" class="form-input" placeholder="Subject" aria-label="subject">
-      </div>
+        <div class="show_label_flexbox gridarea_flex_email">
+          <p class="show_label_text">Email</p>
+          <p class="required"><strong>Required</strong></p>
+        </div>
+        <div class="form-item gridarea_email">
+          <input type="email" name="email" class="form-input" placeholder="Email*" aria-label="email">
+        </div>
 
-      <div class="show_label_flexbox">
-        <p class="show_label_text">Message</p>
-        <p class="required"><strong>Required</strong></p>
-      </div>
-      <div class="form-item">
-        <textarea name="message" class="form-input" placeholder="Message*" aria-label="message"></textarea>
-        <!-- <input type="text" class="form-input last-form-input" placeholder="Message*" aria-label="message"> -->
-      </div>
+        <div class="show_label_flexbox gridarea_flex_subject">
+          <p class="show_label_text">Subject</p>
+          <!-- <p class="required"> <strong>Required</strong></p> -->
+        </div>
+        <div class="form-item gridarea_subject">
+          <input type="text" name="subject" class="form-input" placeholder="Subject" aria-label="subject">
+        </div>
 
-      <button class="form-button" type="submit" name="submit">Submit</button>
+        <div class="show_label_flexbox gridarea_flex_message">
+          <p class="show_label_text">Message</p>
+          <p class="required"><strong>Required</strong></p>
+        </div>
+        <div class="form-item gridarea_message">
+          <textarea name="message" class="form-input" placeholder="Message*" aria-label="message"></textarea>
+          <!-- <input type="text" class="form-input last-form-input" placeholder="Message*" aria-label="message"> -->
+        </div>
+
+        <button class="form-button gridarea_button" type="submit" name="submit">Submit</button>
+
+
+      <!-- this div is for grid_container_form -->
+      </div>
 
     </form>
 

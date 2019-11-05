@@ -315,7 +315,6 @@ nav ul li:last-child {
   padding: 0 6%;
   background: var(--clr_shade);
 }
-
 .show_label_flexbox {
   height: 25px;
   display: flex;
@@ -323,7 +322,6 @@ nav ul li:last-child {
   align-items: flex-end;
   justify-content: space-between;
   padding: 0 0 0.5% 0;
-   /* background: pink;  */
 }
 .show_label_flexbox p {
   font-size: calc(var(--font_n) * 0.95);
@@ -346,15 +344,16 @@ nav ul li:last-child {
   line-height: calc(var(--font_n) * 1.4);
   letter-spacing: 1px;
   padding: 3%;
-  width: 93%;
-  border: 1px solid #d3d3d3;
+  width: 94%;
+  border: 2px solid #d3d3d3;
   font-family: inherit;
 }
 .form-input:focus {
   border: 1px solid #a8a8a8;
+  
 }
   textarea {
-  height: 8rem;
+  min-height: 8rem;
   resize: vertical;
   max-height: 15rem;
 }
@@ -366,10 +365,10 @@ nav ul li:last-child {
   padding: 10px 40px;
   line-height: 30px;
   text-align: center;
-  border: 1px solid var(--clr_accent);
+  border: 2px solid var(--clr_accent);
   display: inline-block;
   text-decoration: none;
-  color: var(--clr_accent);
+  color: var(--clr_dark);
   position: relative;
   overflow: hidden;
   background: transparent;
@@ -402,7 +401,7 @@ nav ul li:last-child {
 }
 .form-button:hover {
   color: var(--clr_dark);
-  border: 1px solid var(--clr_primary);
+  border: 2px solid var(--clr_primary);
   z-index: 1;
 }
 .form-button:hover:before {
@@ -718,7 +717,7 @@ footer .copyright p {
     /* adjust how big the gap of the text should fit in the box */
     padding: 17px 17px 17px 17px;
     /* font-size: var(--font_n); */
-    /* white-spece: text will not jump to next line if no space for it */
+    /* white-space: text will not jump to next line if no space for it */
     /* white-space: nowrap; */
     /* border-radius: 4px; */ 
     /* background: pink; */
@@ -766,8 +765,83 @@ footer .copyright p {
 
   /* TABLET SECTION: FORM (grid_container2) */
   .grid_container2 {
-    padding: 8% 6%;
+    padding: 8% 6% 5% 6%;
   }
+  
+  
+
+  /* TABLET SECTION: FORM (grid_container_form) */
+  .form-item {
+    margin: 0 0 6% 0;
+  }
+  .form-input {
+    padding: 2%;
+    width: 96%;
+  }
+  
+
+  .grid_container_form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-auto-rows: minmax(0px, auto);
+    grid-gap: 0 var(--font_s);
+    padding: 0 0 4% 0;
+
+
+    grid-template-areas:
+    "user_name_flex user_email_flex" 
+    "user_name user_email"
+
+    "user_subject_flex ."
+    "user_subject ."
+
+    "user_message_flex ."
+    "user_message user_button";
+  }
+
+  /* Below is to give the grid-template-areas names */
+  .gridarea_flex_name {
+    grid-area: user_name_flex;
+  }
+  .gridarea_name {
+    grid-area: user_name;
+  }
+
+  .gridarea_flex_email {
+    grid-area: user_email_flex;
+  }
+  .gridarea_email {
+    grid-area: user_email;
+  }
+
+  .gridarea_flex_subject {
+    grid-area: user_subject_flex;
+  }
+  .gridarea_subject {
+    grid-area: user_subject;
+  }
+
+  .gridarea_flex_message {
+    grid-area: user_message_flex;
+  }
+  .gridarea_message {
+    grid-area: user_message;
+  }
+
+  .gridarea_button {
+    grid-area: user_button;
+  }
+
+
+  /* TABLET SECTION: FORM button */
+  .form-button {
+    width: 150px;
+    height: 60px;
+    margin: 0 0 6% 0;
+    align-self: end;
+    justify-self: end;
+  }
+
 
 
   /* TABLET SECTION: CAREER (grid_container3) */
@@ -835,6 +909,31 @@ footer .copyright p {
   .grid_container2 {
     padding: 6% 6%;
   }
+  
+  
+  /*DESKTOP SECTION: FORM (grid_container_form) */
+  .grid_container_form {
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 0 var(--font_m);
+    padding: 0 0 3% 0;
+
+    grid-template-areas:
+    "user_name_flex user_email_flex user_subject_flex"
+    "user_name user_email user_subject"
+
+    "user_message_flex user_message_flex ."
+    "user_message user_message user_button";
+  }
+
+  /* DEKSTOP SECTION: FORM button */
+  .form-button {
+    width: 160px;
+    height: 70px;
+    margin: 0 0 13% 0;
+    align-self: end;
+    justify-self: end;
+  }
+
 
 
   /* DESKTOP SECTION: CAREER (grid_container3) */
