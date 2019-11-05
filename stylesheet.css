@@ -123,10 +123,8 @@ nav ul li:last-child {
   background: var(--clr_shade);
 }
 nav ul li a:hover {
-  /* color: var(--clr_primary); */
   background: var(--clr_shade);
 }
-
 .menu_toggle {
   position: absolute;
   /* display: none; */
