@@ -190,7 +190,7 @@ nav ul li:last-child {
   text-align: left;
   padding: calc(var(--font_n)/2) 0;
   width: 30%;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .contact_td2 {
   text-align: left;
@@ -200,71 +200,27 @@ nav ul li:last-child {
 
 
 /* MOBILE SECTION: TEL, EMAIL, ADDRESS HYPERLINK */
-.contact_dh {
+.contact_td2_aref {
   color: var(--clr_primary);
-  font-weight: bold;
+  /* font-weight: bold; */
 }
-.contact_dh:link {
-  color: var(--clr_primary);
-  text-decoration: none;
-}
-.contact_dh:visited {
+.contact_td2_aref:link {
   color: var(--clr_primary);
   text-decoration: none;
 }
-.contact_dh:hover {
+.contact_td2_aref:visited {
+  color: var(--clr_primary);
+  text-decoration: none;
+}
+.contact_td2_aref:hover {
   color: var(--clr_dark);
   text-decoration: none;
 }
-.contact_dh:active {
-  /* color: var(--clr_dark); */
+.contact_td2_aref:active {
   font-weight: normal;
   text-decoration: none;
 }
 
-.email_dh {
-  color: var(--clr_primary);
-  font-weight: bold;
-}
-.email_dh:link {
-  color: var(--clr_primary);
-  text-decoration: none;
-}
-.email_dh:visited {
-  color: var(--clr_primary);
-  text-decoration: none;
-}
-.email_dh:hover {
-  color: var(--clr_dark);
-  text-decoration: none;
-}
-.email_dh:active {
-  /* color: var(--clr_dark); */
-  font-weight: normal;
-  text-decoration: none;
-}
-
-.map_dh {
-  color: var(--clr_primary);
-  font-weight: bold;
-}
-.map_dh:link {
-  color: var(--clr_primary);
-  text-decoration: none;
-}
-.map_dh:visited {
-  color: var(--clr_primary);
-  text-decoration: none;
-}
-.map_dh:hover {
-  color: var(--clr_dark);
-  text-decoration: none;
-}
-.map_dh:active {
-  /* color: var(--clr_dark); */
-  font-weight: normal;
-  text-decoration: none;
-}
 
 
 /* MOBILE SECTION: opening_hours container */
@@ -758,7 +714,7 @@ footer .copyright p {
 
   /* TABLET  SECTION: CONTACT US (grid_container1) */
   .grid_container1 {
-    padding: 7% 6%;
+    padding: 7% 5%;
   }
 
   /* TABLET SECTION: contact container */
