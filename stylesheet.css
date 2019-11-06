@@ -138,20 +138,28 @@ nav ul li:last-child {
 /* MOBILE SECTION: INTRO */
 .intro {
   background: var(--clr_logogreen);
+  position: relative;
 }
 .logo_green {
+  position: absolute;
   height: 50px;
+  width: 90px;
   background-image: url("IMG/logo_green.JPG");
   background-repeat: no-repeat;
-  background-size: 26%;
-  margin: 0% 0 0 6%;
-  background-position-y: 3px;
+  background-size: contain;
+  margin: 0.5% 0 0 6%;
+  /* background-position-y: 30px; */
+  /* background-position: 30px 0; */
 }
-.intro h1 {
+
+.intro_text {
+  /* position: absolute; */
+}
+.intro_header {
   color: var(--clr_light);
-  padding: 6% 6% 1% 6%;
+  padding: 20% 6% 1% 6%;
 }
-.intro p {
+.intro_body {
   padding: 0% 6% 9% 6%;
   color: var(--clr_light);
 }
@@ -742,16 +750,18 @@ footer .copyright p {
 
   /* TABLET SECTION: INTRO */
   .intro h1 {
-    padding: 14% 6% 3% 6%;
+    padding: 14% 6% 0.5% 6%;
+    text-align: center;
   }
   .intro p {
     padding: 0% 6% 7% 6%;
+    text-align: center;
   }
 
 
   /* TABLET  SECTION: CONTACT US (grid_container1) */
   .grid_container1 {
-    padding: 8% 6%;
+    padding: 7% 6%;
   }
 
   /* TABLET SECTION: contact container */
@@ -765,7 +775,7 @@ footer .copyright p {
 
   /* TABLET SECTION: FORM (grid_container2) */
   .grid_container2 {
-    padding: 8% 6% 5% 6%;
+    padding: 7% 6% 5% 6%;
   }
   
   
@@ -847,7 +857,7 @@ footer .copyright p {
   /* TABLET SECTION: CAREER (grid_container3) */
   .grid_container3 {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 2fr)); 
-    padding: 8% 6%;
+    padding: 7% 6%;
   }
 
   /* TABLET SECTION: CAREER HEADER box */
@@ -880,18 +890,16 @@ footer .copyright p {
   
   /* DESKTOP SECTION: INTRO */
   .intro h1 {
-    padding: 8% 6% 1% 6%;
-    text-align: center;
+    padding: 8% 6% 0.5% 6%;
   }
   .intro p {
-    padding: 0% 6% 6% 6%;
-    text-align: center;
+    padding: 0% 6% 5% 6%;
   }
 
 
   /* DESKTOP  SECTION: CONTACT US (grid_container1) */
   .grid_container1 {
-    padding: 6% 6%;
+    padding: 5.5% 6% 5% 6%;
   }
 
   /* DESKTOP SECTION: contact container */
@@ -907,7 +915,7 @@ footer .copyright p {
 
   /*DESKTOP SECTION: FORM (grid_container2) */
   .grid_container2 {
-    padding: 6% 6%;
+    padding: 5.5% 6% 3.5% 6%;
   }
   
   
@@ -915,7 +923,7 @@ footer .copyright p {
   .grid_container_form {
     grid-template-columns: repeat(3, 1fr); 
     grid-gap: 0 var(--font_m);
-    padding: 0 0 3% 0;
+    padding: 0 0 2% 0;
 
     grid-template-areas:
     "user_name_flex user_email_flex user_subject_flex"
@@ -939,7 +947,7 @@ footer .copyright p {
   /* DESKTOP SECTION: CAREER (grid_container3) */
   .grid_container3 {
     /* grid-template-columns: repeat(auto-fit, minmax(45rem, 2fr));  */
-    padding: 6% 6%;
+    padding: 5.5% 6%;
   }
 
   /* DESKTOP SECTION: CAREER HEADER box */
