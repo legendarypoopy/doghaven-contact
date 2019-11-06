@@ -76,13 +76,14 @@ nav {
 nav #logo {
   background-color: var(--clr_shade);
   height: 100px;
+  width: 220px;
   background-image: url("IMG/logo.png");
   background-repeat: no-repeat;
   background-size: contain;
   /* Cannot use margin bc this is background image, so will have a space when i add background color behind
   so have to use background-position-x to align the logo  */
-  background-position-x: 13%;
   display: none;
+  margin: 0% 0 0 6%;
 }
 nav ul {
   display: flex;
@@ -845,10 +846,10 @@ footer .copyright p {
 
   
   /* DESKTOP SECTION: INTRO */
-  .intro h1 {
+  .intro_header {
     padding: 8% 6% 0.5% 6%;
   }
-  .intro p {
+  .intro_body {
     padding: 0% 6% 5% 6%;
   }
 
