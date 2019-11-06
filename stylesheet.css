@@ -140,10 +140,10 @@ nav ul li:last-child {
   background: var(--clr_logogreen);
   position: relative;
 }
-.logo_green {
+#logo_green {
   position: absolute;
-  height: 50px;
-  width: 90px;
+  height: 41px;
+  width: 100px;
   background-image: url("IMG/logo_green.JPG");
   background-repeat: no-repeat;
   background-size: contain;
