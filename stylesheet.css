@@ -117,7 +117,7 @@ nav ul li:last-child {
 }
 .currentnav {
   cursor: default;
-  border-left: 4px solid var(--clr_accent);
+  border-left: 5px solid var(--clr_accent);
 }
 .currentnav:hover {
   color: inherit;
@@ -702,11 +702,14 @@ footer .copyright p {
 
 
   /* TABLET SECTION: INTRO */
-  .intro h1 {
+  #logo_green {
+    background-image: none;
+  }
+  .intro_header {
     padding: 14% 6% 0.5% 6%;
     text-align: center;
   }
-  .intro p {
+  .intro_body {
     padding: 0% 6% 7% 6%;
     text-align: center;
   }
